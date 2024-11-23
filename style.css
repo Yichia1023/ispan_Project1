@@ -1,0 +1,344 @@
+html {
+  font-family: "Noto Sans TC", sans-serif;
+}
+/* 模組 */
+
+.font1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: rgb(245, 202, 44);
+}
+.font2 {
+  font-size: 24px;
+}
+.font3 {
+  font-size: 48px;
+}
+.font4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(61, 61, 61);
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #f3be42;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+.blue {
+  color: rgb(29, 59, 147);
+}
+
+/* 導覽列 */
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+.navbar-logo {
+  display: flex;
+}
+.navbar-logo span {
+  font-size: 0.75em;
+  font-weight: 900;
+  line-height: 18px;
+  letter-spacing: 4px;
+  margin-left: 20px;
+}
+
+.navbar-link {
+  margin-left: 100px;
+}
+.navbar-link ul {
+  display: flex;
+}
+.navbar-link li {
+  margin-left: 15px;
+  letter-spacing: 2px;
+}
+
+.navbar-others {
+  display: flex;
+  align-items: center;
+}
+.navbar-others a {
+  display: inline-block;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #000;
+}
+a.lang {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+a.lang span {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+a.join {
+  margin-left: 10px;
+  width: 100px;
+  background-color: rgba(245, 202, 44, 0.999);
+  padding: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* 第一個section top-pic */
+section.top-pic {
+  width: 100%;
+  height: 300px;
+  background: url(/images/agenda_top_bg_3.jpg) center center/cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.top-pic-content {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  margin: 100px 200px;
+}
+.top-pic-day {
+  color: rgb(245, 202, 44);
+  font-weight: 800;
+  /* padding: 50px 80px; */
+}
+.day {
+  display: flex;
+}
+
+.text1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-pic-pra {
+  margin-left: 60px;
+  line-height: 1.5rem;
+  width: 60%;
+}
+
+.top-pic-pra h2 {
+  font-weight: 600;
+  margin-block: 10px;
+  font-size: 18px;
+}
+section.top-pic a {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(247, 98, 12);
+  padding: 5px 80px;
+  border-radius: 10px 10px 0 0;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+section.top-pic a i {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  rotate: -30deg;
+  line-height: 40px;
+  margin-right: 20px;
+}
+
+/* section sencend -only img */
+section.secend {
+  width: 65%;
+  margin: 80px auto;
+}
+
+section.secend img {
+  width: 100%;
+}
+/* section thrid -cards */
+
+div.thrid-topic {
+  text-align: center;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+div.speaker-cards {
+  max-width: 80%;
+  display: flex;
+  margin: 10px auto;
+}
+.speaker-cards-content {
+  border: 1px solid rgb(226, 226, 226);
+  height: 480px;
+}
+figure.speaker {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+figure img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.speaker-intro h2 {
+  margin: 15px 10px;
+}
+
+.speaker-intro p {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 5px 10px;
+  color: #727272;
+}
+
+/* section forth -議程 */
+section.forth {
+  margin-top: 50px;
+  background-color: #e0e0e0;
+}
+.forth-topic {
+  color: rgb(241, 241, 241);
+  font-weight: 800;
+  padding: 10px 0 10px 150px;
+}
+.schedule {
+  margin: 0 80px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+.schedule h1.forth-topic-zh {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  writing-mode: vertical-lr;
+  font-weight: 800;
+}
+.schedule-cards {
+  line-height: 28px;
+  grid-column-start: 3;
+  grid-column-end: 10;
+}
+.schedule-card {
+  background-color: #ffffff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+.schedule-card li {
+  color: #7a7979;
+  margin-top: 5px;
+}
+/* section forth的others */
+div.others {
+  background-color: #e0e0e0;
+}
+div.others-mesage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.join-schedule {
+  color: #565656;
+  cursor: pointer;
+}
+.join-schedule i {
+  margin-right: 5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  background-color: #ffe310;
+}
+.join-link {
+  margin-bottom: 10px;
+}
+.join-link button {
+  background-color: #fcfcfc;
+  border-radius: 999px;
+  border: 4px solid black;
+  width: 50px;
+  height: 50px;
+}
+
+.join-link a.join {
+  border-radius: 100px;
+  background-color: rgb(98, 188, 244);
+  color: #fff;
+  font-size: 20px;
+}
+
+.join-link a.join i {
+  background-color: #fff;
+  color: rgb(98, 188, 244);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  rotate: -30deg;
+  line-height: 40px;
+}
+div.contact {
+  color: #7a7979;
+  margin-bottom: 80px;
+  font-size: 14px;
+}
+
+div.previous {
+  background-color: #dfe7ed;
+  color: #4d4d4d;
+  height: 35px;
+  padding-left: 100px;
+  line-height: 35px;
+}
+div.previous a {
+  color: #4d4d4d;
+  text-decoration: none;
+  padding: 0 10px 0 10px;
+  border-right: 1px solid rgb(130, 130, 130);
+}
+/* footer */
+/* footer logo */
+footer {
+  width: 100%;
+  background-color: #201f34;
+  padding: 30px 120px 20px 120px;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.sns-logo i {
+  color: #7a7979;
+  margin-left: 5px;
+}
+
+/* footer 聯絡人 */
+.footer-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b6b4b4;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.footer-contact a {
+  text-decoration: none;
+  color: #b6b4b4;
+}
+.footer-contact span {
+  letter-spacing: 1px;
+  margin-right: 10px;
+}
